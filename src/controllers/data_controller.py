@@ -25,19 +25,19 @@ CORS(data_controller)
 data_validator = DataSchemaValidator()
 response_generator = ResponseGenerator()
 
-@data_controller.route('/', methods=['GET'])
+@data_controller.route('/api/v2/', methods=['GET'])
 def redirect_to_frontend():
     "Redirige a la URL del frontend."
     url_frontend = os.getenv('URL_FRONTEND')
     return redirect(url_frontend)
 
-@data_controller.route('/None', methods=['GET'])
+@data_controller.route('/api/v2/None', methods=['GET'])
 def redirect_to_frontend_none():
     "Redirige a la URL del frontend."
     url_frontend = os.getenv('URL_FRONTEND')
     return redirect(url_frontend)
 
-@data_controller.route('/receive-data', methods=['GET', 'POST', 'HEAD'])
+@data_controller.route('/api/v2/receive-data', methods=['GET', 'POST', 'HEAD'])
 def receive_data():
     "Recibe un mensaje y un ID de usuario y responde con un JSON."
     if request.method == 'HEAD':
@@ -80,7 +80,7 @@ def receive_data():
     logger.info("Generated: \n| %s", message_output)
     return render_json_response(code, message_output, stream=False)
 
-@data_controller.route('/health-check', methods=['GET'])
+@data_controller.route('/api/v2/health-check', methods=['GET'])
 def health_check():
     """
     Endpoint para verificar el estado del servidor.
