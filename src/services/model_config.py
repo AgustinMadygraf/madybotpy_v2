@@ -1,51 +1,44 @@
 """
 Path: src/services/model_config.py
-Este módulo contiene una clase que configura el modelo generativo de Gemini AI.
+Factory o configuración para crear instancias de clientes LLM (Gemini u otros).
 """
 
 import os
-import google.generativeai as genai
 from src.logs.config_logger import LoggerConfigurator
+from src.services.llm_impl.gemini_llm import GeminiLLMClient
 
-# Configuración del logger
 logger = LoggerConfigurator().configure()
 
 class ModelConfig:
     """
-    Clase para configurar el modelo generativo de Gemini AI.
+    Carga la configuración necesaria (API key, system instruction) y
+    crea la instancia concreta de LLMClient.
     """
 
     def __init__(self):
         self.api_key = os.getenv('GEMINI_API_KEY')
         if not self.api_key:
             raise ValueError("La API Key de Gemini no está configurada en las variables de entorno.")
-        logger.info("API Key obtenida correctamente.")
-        self._configure_model()
 
-    def _configure_model(self):
+        logger.info("API Key de Gemini obtenida correctamente.")
+        self.system_instruction = self._load_system_instruction()
+
+    def create_llm_client(self):
         """
-        Configura el modelo generativo de Gemini.
+        Crea y retorna una instancia de GeminiLLMClient utilizando
+        la configuración actual.
         """
-        genai.configure(api_key=self.api_key)
-        self.model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
-            generation_config={
-                "temperature": 1,
-                "top_p": 0.95,
-                "top_k": 40,
-                "max_output_tokens": 8192,
-                "response_mime_type": "text/plain",
-            },
-            system_instruction=self._load_system_instruction(),
+        return GeminiLLMClient(self.api_key, self.system_instruction)
+
+    def _load_system_instruction(self):
+        """
+        Carga las instrucciones del sistema desde el archivo system_instruction.txt.
+        """
+        import os
+        instruction_file_path = os.path.join(
+            os.path.dirname(__file__),
+            '..', '..', 'config', 'system_instruction.txt'
         )
-        logger.info("Modelo generativo configurado correctamente: %s", self.model)
-
-    @staticmethod
-    def _load_system_instruction():
-        """
-        Carga las instrucciones del sistema desde el archivo de configuración.
-        """
-        instruction_file_path = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'system_instruction.txt')
         instruction_file_path = os.path.abspath(instruction_file_path)
         logger.info("Buscando instrucciones del sistema en: %s", instruction_file_path)
 
