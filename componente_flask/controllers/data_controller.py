@@ -1,5 +1,5 @@
 """
-Path: core/controllers/data_controller.py
+Path: componente_flask/controllers/data_controller.py
 Controlador Flask que se encarga de recibir las peticiones HTTP y delegar
 la lógica a DataService.
 """
@@ -9,7 +9,7 @@ from flask import Blueprint, request, redirect
 from flask_cors import CORS
 from dotenv import load_dotenv
 from marshmallow import ValidationError
-from core.views.data_view import render_json_response
+from componente_flask.views.data_view import render_json_response
 from core.logs.config_logger import LoggerConfigurator
 
 # Services y canales
