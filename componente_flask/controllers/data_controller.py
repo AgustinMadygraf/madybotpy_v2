@@ -60,7 +60,7 @@ def redirect_to_frontend():
     url_frontend = os.getenv('URL_FRONTEND')
     return redirect(url_frontend)
 
-@data_controller.route(root_API + 'receive-data', methods=['GET', 'POST', 'HEAD'])
+@data_controller.route(root_API + 'receive-data/', methods=['GET', 'POST', 'HEAD'])
 def receive_data():
     if request.method == 'HEAD':
         return '', 200
@@ -81,7 +81,7 @@ def receive_data():
         logger.error("Error procesando la solicitud: %s", e)
         return render_json_response(500, "Error procesando la solicitud.", stream=False)
 
-@data_controller.route(root_API + 'health-check', methods=['GET'])
+@data_controller.route(root_API + 'health-check/', methods=['GET'])
 def health_check():
     logger.info("Health check solicitado. El servidor está funcionando correctamente.")
     return render_json_response(200, "El servidor está operativo.")
