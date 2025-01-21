@@ -1,0 +1,46 @@
+2025-01-21 12:22:45,668 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 12:22:45,669 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 12:22:45,670 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 12:22:45,670 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 12:22:49,525 - django.request - WARNING - log.py:248 - Not Found: /favicon.ico
+2025-01-21 12:23:16,833 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 12:23:16,834 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 12:23:16,834 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 12:23:16,834 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 12:23:43,880 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 12:23:43,881 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 12:23:43,882 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 12:23:43,882 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 12:48:08,357 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 12:48:08,357 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 12:48:08,358 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 12:48:08,358 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 12:48:48,313 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 12:48:48,314 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 12:48:48,314 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 12:48:48,314 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 12:52:54,357 - django.utils.autoreload - INFO - autoreload.py:266 - C:\AppServ\www\madybot_django\core\logs\config_logger.py changed, reloading.
+2025-01-21 12:52:57,227 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 12:52:57,227 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 12:52:57,228 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 12:52:57,228 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 13:36:50,787 - django.utils.autoreload - INFO - autoreload.py:266 - C:\AppServ\www\madybot_django\core\logs\config_logger.py changed, reloading.
+2025-01-21 13:36:53,448 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 13:36:53,449 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 13:36:53,450 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 13:36:53,450 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 13:37:03,271 - django.utils.autoreload - INFO - autoreload.py:266 - C:\AppServ\www\madybot_django\core\logs\config_logger.py changed, reloading.
+2025-01-21 13:37:06,179 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 13:37:06,179 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 13:37:06,180 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 13:37:06,181 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 13:38:38,633 - django.utils.autoreload - INFO - autoreload.py:266 - C:\AppServ\www\madybot_django\core\logs\config_logger.py changed, reloading.
+2025-01-21 13:38:41,241 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 13:38:41,241 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 13:38:41,242 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 13:38:41,242 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 13:38:51,499 - app_logger - INFO - model_config.py:24 - API Key de Gemini obtenida correctamente.
+2025-01-21 13:38:51,500 - app_logger - INFO - model_config.py:44 - Buscando instrucciones del sistema en: C:\AppServ\www\madybot_django\config\system_instruction.txt
+2025-01-21 13:38:51,500 - app_logger - INFO - gemini_llm.py:28 - GeminiLLMClient inicializado correctamente.
+2025-01-21 13:38:51,500 - app_logger - INFO - response_generator.py:22 - ResponseGenerator inicializado con el modelo configurado.
+2025-01-21 13:47:06,294 - django.utils.autoreload - INFO - autoreload.py:266 - C:\AppServ\www\madybot_django\core\logs\config_logger.py changed, reloading.

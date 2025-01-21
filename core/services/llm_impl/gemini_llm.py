@@ -4,8 +4,8 @@ Implementación de ILLMClient utilizando la API de Gemini.
 """
 
 import google.generativeai as genai
-from src.services.llm_client import ILLMClient
-from src.logs.config_logger import LoggerConfigurator
+from core.services.llm_client import ILLMClient
+from core.logs.config_logger import LoggerConfigurator
 
 logger = LoggerConfigurator().configure()
 

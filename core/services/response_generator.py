@@ -4,8 +4,8 @@ Este módulo contiene una clase que genera respuestas utilizando un modelo de le
 manteniendo la lógica independiente de cualquier canal específico (web, Telegram, etc.).
 """
 
-from src.logs.config_logger import LoggerConfigurator
-from src.services.model_config import ModelConfig
+from core.logs.config_logger import LoggerConfigurator
+from core.services.model_config import ModelConfig
 
 # Configuración del logger
 logger = LoggerConfigurator().configure()

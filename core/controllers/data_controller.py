@@ -9,15 +9,15 @@ from flask import Blueprint, request, redirect
 from flask_cors import CORS
 from dotenv import load_dotenv
 from marshmallow import ValidationError
-from src.views.data_view import render_json_response
-from src.logs.config_logger import LoggerConfigurator
+from core.views.data_view import render_json_response
+from core.logs.config_logger import LoggerConfigurator
 
 # Services y canales
-from src.services.data_service import DataService
-from src.services.data_validator import DataSchemaValidator
-from src.services.model_config import ModelConfig
-from src.services.response_generator import ResponseGenerator
-from src.channels.imessaging_channel import IMessagingChannel
+from core.services.data_service import DataService
+from core.services.data_validator import DataSchemaValidator
+from core.services.model_config import ModelConfig
+from core.services.response_generator import ResponseGenerator
+from core.channels.imessaging_channel import IMessagingChannel
 
 logger = LoggerConfigurator().configure()
 load_dotenv()

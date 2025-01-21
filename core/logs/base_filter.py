@@ -1,5 +1,5 @@
 """
-src/logs/base_filter.py
+Path: core/logs/base_filter.py
 Base filter module for shared filter functionality.
 """
 

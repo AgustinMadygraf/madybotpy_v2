@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "filters": {
+        "info_error_filter": {
+            "()": "core.logs.info_error_filter.InfoErrorFilter"
+        },
+        "exclude_http_logs": {
+            "()": "core.logs.exclude_http_logs_filter.ExcludeHTTPLogsFilter"
+        }
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "filters": ["exclude_http_logs"],
+            "formatter": "simpleFormatter"
+        }
+    },
+    "loggers": {
+        "": {
+            "level": "DEBUG",
+            "handlers": ["console"]
+        }
+    },
+    "formatters": {
+        "simpleFormatter": {
+            "format": "%(asctime)s - %(name)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s"
+        }
+    }
+}

@@ -3,7 +3,7 @@ Path: src/views/data_view.py
 """
 
 from flask import jsonify
-from src.logs.config_logger import LoggerConfigurator
+from core.logs.config_logger import LoggerConfigurator
 
 
 logger = LoggerConfigurator().configure()

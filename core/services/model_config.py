@@ -4,8 +4,8 @@ Factory o configuración para crear instancias de clientes LLM (Gemini u otros).
 """
 
 import os
-from src.logs.config_logger import LoggerConfigurator
-from src.services.llm_impl.gemini_llm import GeminiLLMClient
+from core.logs.config_logger import LoggerConfigurator
+from core.services.llm_impl.gemini_llm import GeminiLLMClient
 
 logger = LoggerConfigurator().configure()
 
