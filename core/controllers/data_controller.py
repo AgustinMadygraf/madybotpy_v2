@@ -1,5 +1,5 @@
 """
-Path: src/controllers/data_controller.py
+Path: core/controllers/data_controller.py
 Controlador Flask que se encarga de recibir las peticiones HTTP y delegar
 la lógica a DataService.
 """

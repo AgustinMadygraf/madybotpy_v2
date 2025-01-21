@@ -1,6 +1,6 @@
 __pycache__/
 config/system_instruction.txt
 docs/00-Prompt-for-ProjectAnalysis.md
-src/logs/sistema.log
+core/logs/sistema.log
 .env
 todo.md

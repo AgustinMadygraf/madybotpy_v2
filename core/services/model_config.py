@@ -1,5 +1,5 @@
 """
-Path: src/services/model_config.py
+Path: core/services/model_config.py
 Factory o configuración para crear instancias de clientes LLM (Gemini u otros).
 """
 

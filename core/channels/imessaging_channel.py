@@ -1,5 +1,5 @@
 """
-Path: src/channels/imessaging_channel.py
+Path: core/channels/imessaging_channel.py
 Definición de la interfaz abstracta para los canales de mensajería.
 """
 

@@ -1,5 +1,5 @@
 """
-Path: src/services/data_service.py
+Path: core/services/data_service.py
 Servicio para manejar la lógica principal de recepción y procesamiento de datos.
 """
 

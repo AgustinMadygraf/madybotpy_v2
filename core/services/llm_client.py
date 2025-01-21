@@ -1,5 +1,5 @@
 """
-Path: src/services/llm_client.py
+Path: core/services/llm_client.py
 Interfaz ILLMClient para clientes LLM.
 """
 

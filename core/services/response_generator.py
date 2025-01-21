@@ -1,5 +1,5 @@
 """
-Path: src/services/response_generator.py
+Path: core/services/response_generator.py
 Este módulo contiene una clase que genera respuestas utilizando un modelo de lenguaje generativo,
 manteniendo la lógica independiente de cualquier canal específico (web, Telegram, etc.).
 """

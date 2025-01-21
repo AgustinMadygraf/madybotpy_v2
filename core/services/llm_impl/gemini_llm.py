@@ -1,5 +1,5 @@
 """
-Path: src/services/llm_impl/gemini_llm.py
+Path: core/services/llm_impl/gemini_llm.py
 Implementación de ILLMClient utilizando la API de Gemini.
 """
 
